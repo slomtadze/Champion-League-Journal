@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.container{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('img/backgroung\ img.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.main h1{
+    font-size: 200%;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.main p{
+    font-size: 130%;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.options-input{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.options-input input,
+.options-input button{
+    font-size: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+.options-input input{
+    width: 30%;
+    background-color: rgb(159, 159, 226);
+    color: #fff;
+    border: none;    
+}
+.options-input button{
+    color: #fff;
+    background-color: rgb(121, 121, 224);
+    width: 30%;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.options-input button:hover,
+.options-input button:active{
+    cursor: pointer;
+    background-color: rgb(84, 84, 219);
+}
+.teams-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 60%;
+}
+.teams-container div{
+    color: rgb(159, 159, 226);
+    font-size: 70%;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.teams-container div:hover{
+    cursor: pointer;
+    color: #fff;
+}
